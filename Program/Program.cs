@@ -9,3 +9,12 @@ int i = int.Parse(Console.ReadLine()!);
 
 string[] array1 = new string[i];
 string[] array2 = new string[i];
+
+void FillArray(string[] array1)
+{
+    for (int i = 0; i < array1.Length; i++)
+    {
+        array1[i] = Console.ReadLine()!;
+    }
+}
+FillArray(array1);
