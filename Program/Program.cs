@@ -22,7 +22,7 @@ void FillArray(string[] array1)
     int num = 0;
     for (int i = 0; i < array1.Length; i++)
     {
-        num ++;
+        num++;
         Console.Write($"Enter the item № {num}: ");
         array1[i] = Console.ReadLine()!;
     }
@@ -42,10 +42,10 @@ void SortArray(string[] array1, string[] array2)
     int count = 0;
     for (int i = 0; i < array1.Length; i++)
     {
-    if(array1[i].Length <= 3)
+        if (array1[i].Length <= 3)
         {
-        array2[count] = array1[i];
-        count++;
+            array2[count] = array1[i];
+            count++;
         }
     }
 }
