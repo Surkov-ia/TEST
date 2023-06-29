@@ -11,14 +11,19 @@ string[] array1 = new string[i];
 string[] array2 = new string[i];
 
 FillArray(array1);
+Console.Write("Specified array: ");
 PrintArray1(array1);
 SortArray(array1, array2);
+Console.Write("Sorting result: ");
 PrintArray2(array2);
 
 void FillArray(string[] array1)
 {
+    int num = 0;
     for (int i = 0; i < array1.Length; i++)
     {
+        num ++;
+        Console.Write($"Enter the item № {num}: ");
         array1[i] = Console.ReadLine()!;
     }
 }
