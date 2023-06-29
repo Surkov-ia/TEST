@@ -4,7 +4,7 @@
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
 Console.Clear();
-Console.WriteLine("Enter the length of the array: ");
+Console.Write("Enter the length of the array: ");
 int i = int.Parse(Console.ReadLine()!);
 
 string[] array1 = new string[i];
@@ -18,3 +18,13 @@ void FillArray(string[] array1)
     }
 }
 FillArray(array1);
+
+void PrintArray1(string[] array1)
+{
+    for (int i = 0; i < array1.Length; i++)
+    {
+        Console.Write($"{array1[i]} ");
+    }
+    Console.WriteLine();
+}
+PrintArray1(array1);
