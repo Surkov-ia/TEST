@@ -10,6 +10,11 @@ int i = int.Parse(Console.ReadLine()!);
 string[] array1 = new string[i];
 string[] array2 = new string[i];
 
+FillArray(array1);
+PrintArray1(array1);
+SortArray(array1, array2);
+PrintArray2(array2);
+
 void FillArray(string[] array1)
 {
     for (int i = 0; i < array1.Length; i++)
@@ -17,7 +22,6 @@ void FillArray(string[] array1)
         array1[i] = Console.ReadLine()!;
     }
 }
-FillArray(array1);
 
 void PrintArray1(string[] array1)
 {
@@ -27,7 +31,6 @@ void PrintArray1(string[] array1)
     }
     Console.WriteLine();
 }
-PrintArray1(array1);
 
 void SortArray(string[] array1, string[] array2)
 {
@@ -41,7 +44,6 @@ void SortArray(string[] array1, string[] array2)
         }
     }
 }
-SortArray(array1, array2);
 
 void PrintArray2(string[] array2)
 {
@@ -51,4 +53,3 @@ void PrintArray2(string[] array2)
     }
     Console.WriteLine();
 }
-PrintArray2(array2);
